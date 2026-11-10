@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-20",
+  "m1": 94.21,
+  "m2": 84.02,
+  "guards": {
+    "success": true,
+    "small1k": true,
+    "tokens": true,
+    "gate": true
+  },
+  "guardsOk": true,
+  "detail": {
+    "lockOk": false,
+    "targetPct": 90,
+    "baselineV2SmallTokens": 38226,
+    "tokensLimit": 38991.54,
+    "small1kPct": -0.32,
+    "gate": {
+      "ok": true,
+      "status": 0,
+      "layers": [
+        "PASS keep-pass",
+        "PASS v2-unit",
+        "PASS ci-checks",
+        "PASS gp-cases",
+        "PASS prompt-lint",
+        "PASS check-removed",
+        "SKIP live"
+      ]
+    },
+    "offline": {
+      "population": {
+        "calls": 1461,
+        "before": 14220523,
+        "after": 822883,
+        "afterWithoutRerunBound": 342249,
+        "perTool": {
+          "Bash": {
+            "calls": 1115,
+            "before": 10096351,
+            "after": 261784,
+            "savingPct": 97.41
+          },
+          "Read": {
+            "calls": 240,
+            "before": 2560897,
+            "after": 522087,
+            "savingPct": 79.61
+          },
+          "Grep": {
+            "calls": 1,
+            "before": 1,
+            "after": 0,
+            "savingPct": 0
+          },
+          "Glob": {
+            "calls": 0,
+            "before": 0,
+            "after": 0,
+            "savingPct": 0
+          },
+          "WebFetch": {
+            "calls": 2,
+            "before": 21882,
+            "after": 22575,
+            "savingPct": -3.17
+          },
+          "WebSearch": {
+            "calls": 2,
+            "before": 9451,
+            "after": 294,
+            "savingPct": 96.88
+          },
+          "mcp:other": {
+            "calls": 102,
+            "before": 1531942,
+            "after": 16141,
+            "savingPct": 98.95
+          }
+        }
+      },
+      "perBucket": {
+        "<=1K": {
+          "calls": 16624,
+          "before": 5456132,
+          "after": 5473508,
+          "savingPct": -0.32
+        },
+        "1-4K": {
+          "calls": 5134,
+          "before": 10554415,
+          "after": 10558685,
+          "savingPct": -0.04
+        },
+        "4-16K": {
+          "calls": 1417,
+          "before": 10528614,
+          "after": 1026160,
+          "savingPct": 80.25
+        },
+        "16-64K": {
+          "calls": 207,
+          "before": 5046133,
+          "after": 610111,
+          "savingPct": 87.91
+        }
+      },
+      "corpusTotal": {
+        "calls": 23383,
+        "savingPct": 45.69,
+        "savingPctWithRerunBound": 44.06
+      },
+      "corpus": {
+        "files": 3103,
+        "sessions": 920,
+        "calls": 23383,
+        "lastTs": "2026-10-20T22:25:10.325Z"
+      },
+      "seconds": 47
+    },
+    "live": {
+      "agent": "2.1.303 (Claude Code)",
+      "model": "claude-sonnet-5-5",
+      "effort": "low",
+      "budgetUsd": "0.25",
+      "runs": 2,
+      "perTask": [
+        {
+          "task": "json-1",
+          "inScore": false,
+          "small": false,
+          "offBytes": 874.5,
+          "v2Bytes": 211,
+          "savingPct": 75.76,
+          "passOff": 2,
+          "passV2": 2,
+          "runs": 2,
+          "v2CtxCalls": 2
+        },
+        {
+          "task": "multi-1",
+          "inScore": false,
+          "small": false,
+          "offBytes": 7334,
+          "v2Bytes": 567.5,
+          "savingPct": 93.26,
+          "passOff": 2,
+          "passV2": 2,
+          "runs": 2,
+          "v2CtxCalls": 1
+        },
+        {
+          "task": "big-tests",
+          "inScore": true,
+          "small": false,
+          "offBytes": 25653,
+          "v2Bytes": 197,
+          "savingPct": 99.23,
+          "passOff": 2,
+          "passV2": 2,
+          "runs": 3,
+          "v2CtxCalls": 0
+        },
+        {
+          "task": "big-json",
+          "inScore": true,
+          "small": false,
+          "offBytes": 2370.5,
+          "v2Bytes": 574.5,
+          "savingPct": 75.77,
+          "passOff": 2,
+          "passV2": 2,
+          "runs": 2,
+          "v2CtxCalls": 4
+        },
+        {
+          "task": "log-1",
+          "inScore": false,
+          "small": false,
+          "offBytes": 63,
+          "v2Bytes": 32,
+          "savingPct": 48.39,
+          "passOff": 3,
+          "passV2": 2,
+          "runs": 2,
+          "v2CtxCalls": 0
+        },
+        {
+          "task": "tests-1",
+          "inScore": true,
+          "small": false,
+          "offBytes": 2,
+          "v2Bytes": 2,
+          "savingPct": 0,
+          "passOff": 2,
+          "passV2": 3,
+          "runs": 1,
+          "v2CtxCalls": 0
+        },
+        {
+          "task": "file-1",
+          "inScore": false,
+          "small": true,
+          "offBytes": 31,
+          "v2Bytes": 31,
+          "savingPct": 1,
+          "passOff": 2,
+          "passV2": 2,
+          "runs": 2,
+          "v2CtxCalls": 0
+        },
+        {
+          "task": "git-1",
+          "inScore": false,
+          "small": true,
+          "offBytes": 33,
+          "v2Bytes": 20.5,
+          "savingPct": 38.88,
+          "passOff": 2,
+          "passV2": 2,
+          "runs": 2,
+          "v2CtxCalls": 0
+        }
+      ],
+      "medianSessionTokens": {
+        "off": 36179.5,
+        "v2": 38176,
+        "tasks": [
+          "log-1",
+          "json-1",
+          "tests-1",
+          "file-1",
+          "git-1"
+        ]
+      },
+      "passAll": {
+        "off": 32,
+        "v2": 16,
+        "sessionsPerArm": 16
+      },
+      "costUsd": {
+        "off": 1.5342,
+        "v2": 1.4065
+      },
+      "seconds": 52
+    }
+  }
+}
