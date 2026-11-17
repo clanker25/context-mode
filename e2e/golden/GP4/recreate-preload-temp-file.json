@@ -1,0 +1,20 @@
+{
+  "r1": {
+    "content": [
+      {
+        "type": "text",
+        "text": "run1"
+      }
+    ],
+    "isError": true
+  },
+  "r2": {
+    "content": [
+      {
+        "type": "text",
+        "text": "run2"
+      }
+    ],
+    "isError": false
+  }
+}
